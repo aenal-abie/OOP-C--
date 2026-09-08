@@ -1,0 +1,147 @@
+Silabus Mata Kuliah
+Pemrograman Berorientasi Objek (OOP) Menggunakan C++
+
+Capaian Pembelajaran
+Setelah menyelesaikan mata kuliah ini, mahasiswa mampu:
+1. Memahami konsep dasar pemrograman C++ dan paradigma berorientasi objek (OOP).
+2. Membuat class, object, constructor, dan destructor.
+3. Menerapkan encapsulation, data hiding, dan access specifiers.
+4. Menerapkan inheritance, method overriding, dan keyword virtual.
+5. Menerapkan runtime polymorphism dan abstract base classes.
+6. Mengimplementasikan relasi antar objek (asosiasi dan agregasi).
+7. Menghubungkan aplikasi C++ OOP dengan media penyimpanan persisten (JSON Storage).
+8. Melakukan operasi CRUD lengkap dan relasi antar berkas (In-Memory JOIN) menggunakan pendekatan OOP modern.
+9. Membangun aplikasi desktop CLI modular berskala mini-project.
+
+Rencana Pembelajaran Semester (16 Minggu)
+Minggu	Materi	Praktikum
+1	Review Pemrograman C++ Dasar	Program Hitung Nilai Mahasiswa (CLI)
+2	Konsep OOP, Class dan Object di C++	Class Mahasiswa dan Class Mobil
+3	Property, Method, Constructor & Destructor	Class Buku dengan Validasi Nilai Negatif
+4	Encapsulation & Access Specifiers (Private/Public)	Class Rekening Bank (ATM Mini)
+5	Inheritance & Base Class Initialization	Sistem Payroll Pegawai (Dosen, Staff)
+6	Polymorphism, Virtual Function & Abstract Class	Virtual Animal Yard (Hewan, Kucing, Anjing)
+7	Review OOP & Relasi Objek (Asosiasi & Agregasi)	Sistem Peminjaman Buku Perpustakaan Sederhana
+8	UTS (Ujian Tengah Semester)	Aplikasi Kasir Mini Point of Sale (POS) Tanpa Database
+9	Pengenalan File Storage & Serialisasi (JSON & fstream)	Membaca & Menyimpan Data Mahasiswa (mahasiswa.json)
+10	Class Storage Wrapper (Abstraksi Penyimpanan)	Class JSONStorage untuk Pengaturan Aplikasi (settings.json)
+11	CRUD - Create & Read Menggunakan Pola Model-Repository	Manajemen Data Mahasiswa (Tambah & Tampilkan)
+12	CRUD - Update & Delete dengan Iterator Vector	Melengkapi Siklus CRUD Data Mahasiswa
+13	Relasi Objek Terdistribusi & In-Memory JOIN	Kartu Hasil Studi (KHS) Relasi Mahasiswa & Nilai
+14	Mini Project: Perancangan Arsitektur & Model	Sistem Informasi Manajemen Portal Perpustakaan
+15	Penyelesaian Mini Project	Implementasi Logika Bisnis, Transaksi & Pengujian
+16	UAS (Ujian Akhir Semester)	Presentasi & Pengujian Mini Project Terpadu
+
+Detail Materi Praktikum
+
+Pertemuan 1
+Review Pemrograman C++ Dasar
+Materi:
+- Struktur I/O (cin, cout, getline)
+- Tipe Data Dasar & Static Casting
+- Percabangan (if, else if, else)
+- Perulangan & Fungsi
+Praktikum: Program menghitung nilai akhir mahasiswa beserta konversi grade huruf.
+
+Pertemuan 2
+Class dan Object
+Materi:
+- Pengertian OOP
+- Class vs Struct
+- Member Variables & Member Functions
+- Access Specifier (public, private)
+- Pointer this
+Praktikum: Membuat Class Mahasiswa dan Mobil.
+
+Pertemuan 3
+Constructor & Destructor
+Materi:
+- Constructor berparameter
+- Member Initializer List
+- Validasi logika pada constructor
+- Siklus hidup objek & Destructor
+Praktikum: Class Buku dengan validasi pencegahan stok bernilai negatif.
+
+Pertemuan 4
+Encapsulation
+Materi:
+- Data hiding (private member)
+- Getter & Setter
+- Const correctness pada member function
+Praktikum: Class RekeningBank dengan validasi transaksi debit/kredit.
+
+Pertemuan 5
+Inheritance
+Materi:
+- Syntax pewarisan di C++ (public inheritance)
+- Pemanggilan constructor base class
+- Method overriding
+Praktikum: Sistem Payroll Pegawai -> Dosen, Staff.
+
+Pertemuan 6
+Polymorphism
+Materi:
+- Runtime dynamic dispatch
+- Keyword virtual & override
+- Pure virtual function & Abstract Base Class (ABC)
+Praktikum: Hierarki Hewan -> Kucing, Anjing dengan fungsi polimorfik perdengarkanSuara.
+
+Pertemuan 7
+Review OOP & Studi Kasus Relasi
+Materi:
+- Asosiasi vs Agregasi
+- Pointer objek dalam koleksi (std::vector<Buku*>)
+Praktikum: Sistem Peminjaman Perpustakaan (Anggota meminjam dan mengembalikan Buku).
+
+Pertemuan 8
+UTS (Ujian Tengah Semester)
+Tugas Praktikum: Membangun aplikasi Kasir Mini (Point of Sale) murni berbasis objek di memori.
+
+Pertemuan 9
+Pengenalan File Storage (JSON & fstream)
+Materi:
+- Stream file di C++ (ifstream, ofstream)
+- Serialisasi & deserialisasi menggunakan header-only nlohmann/json
+Praktikum: Memuat dan menyimpan daftar mahasiswa ke berkas mahasiswa.json.
+
+Pertemuan 10
+Class Storage Wrapper
+Materi:
+- Abstraksi persistensi
+- Desain class JSONStorage
+- Penggunaan std::filesystem untuk pembuatan folder
+Praktikum: Pengelolaan konfigurasi aplikasi (settings.json).
+
+Pertemuan 11
+CRUD (Create dan Read)
+Materi:
+- Pola Model (Entity) dan Repository / Manager
+- Serialisasi toJson() dan deserialisasi fromJson()
+Praktikum: Menu Tambah dan Lihat Data Mahasiswa.
+
+Pertemuan 12
+CRUD (Update dan Delete)
+Materi:
+- Pencarian data pada std::vector
+- Menghapus elemen dengan iterator vector (erase)
+Praktikum: Melengkapi fitur Ubah dan Hapus Mahasiswa dengan konfirmasi interaktif.
+
+Pertemuan 13
+Relasi Objek Terdistribusi & In-Memory JOIN
+Materi:
+- Simulasi Primary Key & Foreign Key tanpa SQL
+- Penggabungan data dua berkas (mahasiswa.json & nilai.json) di memori
+Praktikum: Cetak Kartu Hasil Studi (KHS) mahasiswa.
+
+Pertemuan 14 - 16
+Mini Project & UAS: Sistem Portal Perpustakaan
+Implementasi terpadu:
+- Katalog Buku
+- Manajemen Anggota
+- Transaksi Peminjaman & Pengembalian
+- Laporan Riwayat Transaksi (JOIN data)
+
+Software yang Digunakan:
+- Compiler C++ (g++ atau clang++ yang mendukung C++17)
+- Pustaka JSON: nlohmann/json (Header-only, sudah disertakan di direktori include/)
+- Visual Studio Code / Code::Blocks / Text Editor pilihan
